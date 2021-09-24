@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Bag</title>
+    <link rel="shortcut icon" href="./img/bag.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="flickity.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="circle"></div>
+
+    <header>
+      <div class="header_item">
+        <img class="img-logo" src="./img/bag.png" />
+      </div>
+
+      <div class="header_item">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Conect</a>
+      </div>
+
+      <div class="header_item2">
+        <a class="button_link" href="#"><p class="header_button">Login</p></a>
+      </div>
+    </header>
+
+    <div class="first_front">
+      <h1>Web Bag</h1>
+      <p>
+        This is your personal online backpack where everything you need is
+        collected in one place
+      </p>
+      <p class="button_get_start">Get start</p>
+    </div>
+    <div class="img_box">
+      <img
+        src="./img/e_book.png"
+        class="front_img"
+        data-tilt
+        data-tilt-scale="1.005"
+      />
+    </div>
+
+    <img class="arrow" src="./img/arrow.png" onclick="scroll_down" />
+    <h2 class="advantages">Our Advantages</h2>
+    <div class="services">
+      <div class="service_item fade" data-aos="fade-up">
+        <div class="img">
+          <img class="img1" src="./img/img1.png" />
+        </div>
+        <div class="text">
+          <h2>Online Library</h2>
+          <p>
+            You have access to a huge base of books and educational materials
+          </p>
+        </div>
+      </div>
+      <div class="service_item fade" data-aos="fade-up">
+        <div class="img">
+          <img class="img2" src="./img/img2.png" />
+        </div>
+        <div class="text">
+          <h2>Exercise</h2>
+          <p>
+            Various tests to check the acquired knowledge and prepare for exams
+          </p>
+        </div>
+      </div>
+      <div class="service_item fade" data-aos="fade-up">
+        <div class="img">
+          <img class="img3" src="./img/img3.png" />
+        </div>
+        <div class="text">
+          <h2>Notebook</h2>
+          <p>
+            You can create up to 50 notebooks that can be uploaded to the cloud
+          </p>
+        </div>
+      </div>
+      <div class="service_item fade" data-aos="fade-up">
+        <div class="img">
+          <img class="img4" src="./img/img4.png" />
+        </div>
+        <div class="text">
+          <h2>Cross-Platform</h2>
+          <p>
+            The application opens on any device with internet access and does not require installation
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="polygon"></div>
+
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="script.js"></script>
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      SmoothScroll({
+        animationTime: 700,
+        stepSize: 150,
+        accelerationDelta: 10,
+        accelerationMax: 3,
+        keyboardSupport: true,
+        arrowScroll: 100,
+        pulseAlgorithm: true,
+        pulseScale: 4,
+        pulseNormalize: 1,
+        touchpadSupport: true,
+      });
+    </script>
+  </body>
+</html>
